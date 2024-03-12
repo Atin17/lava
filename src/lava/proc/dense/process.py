@@ -272,6 +272,6 @@ class DelayDense(Dense):
                 raise ValueError("DelayDense Process 'delays' expects same "
                                  f"shape than the weight matrix or int, got "
                                  f"{delays}.")
-            if delays.dtype != int:
+            else if delays.dtype != int:
                 raise ValueError("DelayDense Process 'delays' expects integer "
                                  f"value(s), got {delays}.")
